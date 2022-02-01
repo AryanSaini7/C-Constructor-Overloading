@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class complex
+{
+    int a,b;
+    public:
+    complex(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    complex(int x)
+    {
+        a=x;
+        b=0;
+    }
+    complex()
+    {
+        a=0;
+        b=0;
+    }
+    void print()
+    {
+        cout<<"No Is:"<<a<<"+"<<b<<"i"<<endl;
+    }
+    
+};
+
+int main()
+{
+    complex v(2,8);
+    v.print();
+    complex n(1);
+    n.print();
+    complex m;
+    m.print();
+}
